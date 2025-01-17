@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^([0-9A-Za-z_:-]+)/?$ index.php [L]
+RewriteRule ^admin/?$ admin_index.php [L]
+RewriteRule ^admin/links/?$ admin_links.php [L]
+RewriteRule ^admin/link/add?$ add_link.php [L]
+RewriteRule ^admin/link/edit/([0-9A-Z_:-]+)/?$ edit_link.php?id=$1 [L]
+RewriteRule ^admin/link/delete/([0-9A-Z_:-]+)/?$ delete_link.php?id=$1 [L]
